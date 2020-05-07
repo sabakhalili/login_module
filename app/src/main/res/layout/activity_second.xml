@@ -4,67 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3f729b"
+    android:background="#3b5998"
     tools:context=".SecondActivity">
 
     <Button
         android:id="@+id/button_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signin"
+        android:textColor="#101010"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.557"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Signin"
-        android:textColor="#101010"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintVertical_bias="0.557" />
 
     <EditText
         android:id="@+id/password"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        app:layout_constraintVertical_bias="0.119"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="#151414"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="234dp" />
-
-    <EditText
-        android:id="@+id/email"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.192"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <EditText
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Email Adress"
         android:inputType="textEmailAddress"
         android:textColor="#1B1A1A"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="150dp" />
-
-    <TextView
-        android:id="@+id/text"
-
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.724"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <TextView
+        android:id="@+id/text"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Not registered yet? Sign up"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="476dp" />
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724" />
 </androidx.constraintlayout.widget.ConstraintLayout>
